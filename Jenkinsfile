@@ -1,11 +1,6 @@
 pipeline {
 agent any
 stages {
-stage(“Checkout”) {
-steps {
-git url: ‘https://github.com/aknam/SpringBoot.git’
-}
-}
 stage(“Compile”) {
 steps {
 sh “./gradlew compileJava”
